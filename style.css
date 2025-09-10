@@ -1,0 +1,18 @@
+/* Styles for the body element */
+body {
+    font-family: Arial, sans-serif; /* Sets the font */
+    background-color: #f0f0f0; /* Sets a light grey background */
+    margin: 20px; /* Adds a margin around the body content */
+  }
+  
+  /* Styles for all h1 headings */
+  h1 {
+    color: #333; /* Dark grey text color */
+    text-align: center; /* Centers the text */
+  }
+  
+  /* Styles for all paragraph elements */
+  p {
+    color: #666; /* Medium grey text color */
+    line-height: 1.6; /* Sets the line spacing */
+  }
