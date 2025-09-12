@@ -16,3 +16,136 @@ body {
     color: #666; /* Medium grey text color */
     line-height: 1.6; /* Sets the line spacing */
   }
+
+  config_box {
+      display: flex;
+      flex-direction: column; /* Stack entry boxes vertically */
+      gap: 15px; /* Adds spacing between entry boxes */
+      border: #333;
+      border-width: 2px;
+      border-style: solid;
+      padding: 15px; /* Adds padding inside the box */
+      margin: 20px 0; /* Adds margin above and below the box */
+  }
+
+  
+  entry_box {
+      display: flex;
+      align-items: center; /* Aligns label and input/checkbox vertically */
+  }
+
+  entry_box label {
+      flex: none; /* Prevents the label from stretching */
+      width: 150px; /* Sets a fixed width for the label */
+  }
+
+  entry_box input[type="text"] {
+      flex: none; /* Prevents the input from stretching */
+      width: 25px; /* Sets a fixed size for the input */
+  }
+
+  entry_box input[type="checkbox"] {
+      width: auto; /* Ensures the checkbox doesn't stretch */
+  }
+
+  entry_box transparent-box {
+      flex: 1; /* Makes the input take up more space */
+  }
+  button {
+        padding: 10px 20px; /* Adds padding inside the button */
+        border-radius: 5px; /* Rounds the corners */
+        cursor: pointer; /* Changes the cursor on hover */
+        background-color: #007bff; /* Blue background */
+        color: white; /* White text */
+        border: none; /* Removes the default border */
+  }
+  button:hover {
+      background-color: #0056b3; /* Darker blue on hover */
+  }
+  transparent-box{
+      background-color: rgba(255, 255, 255, 0.0); /* Semi-transparent white background */
+      padding: 20px; /* Adds padding inside the box */
+      border-radius: 10px; /* Rounds the corners */
+      box-shadow: none; /* Adds a subtle shadow */
+  }
+
+  div#rows_container {
+      margin-top: 20px; /* Adds margin above the container */
+      padding: 15px; /* Adds padding inside the container */
+  }
+
+  #rows_container {
+    margin-top: 20px;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    gap: 10px; /* Add spacing between elements */
+    margin-bottom: 15px; /* Add spacing between rows */
+    border: 2px solid #0056b3; /* Add a border around the row */
+    padding: 15px; /* Add padding inside the row */
+    border-radius: 5px; /* Round the corners of the row */
+    background-color: #f9f9f9; /* Light background for better visibility */
+  }
+
+  .row label {
+    font-weight: bold; /* Make labels bold */
+  }
+
+  .row input,
+  .row select {
+    width: 50%; /* Make inputs and dropdowns take full width */
+    padding: 5px; /* Add padding inside inputs */
+    border: 1px solid #ccc; /* Add a border to inputs */
+    border-radius: 5px; /* Round the corners of inputs */
+  }
+
+  .row .button-container {
+    display: flex;
+    justify-content: flex-start; /* Align buttons to the start */
+    gap: 10px; /* Add spacing between buttons */
+  }
+
+  .row button {
+    padding: 5px 10px; /* Add padding inside the button */
+    border-radius: 5px; /* Round the corners */
+    background-color: #007bff; /* Blue background */
+    color: white; /* White text */
+    border: none; /* Remove border */
+    cursor: pointer; /* Pointer cursor on hover */
+  }
+
+  .row button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+
+  .row .input-dropdown-container {
+    display: flex; /* Align dropdown and input horizontally */
+    gap: 10px; /* Add spacing between the dropdown and input */
+    width: 100%; /* Ensure it takes the full width of the row */
+    align-items: center; /* Vertically center the items */
+  }
+
+  row_label {
+      font-weight: bold; /* Makes the row label bold */
+      margin-bottom: 5px; /* Adds spacing below the label */
+      text-align: center;
+      font-size: large;
+  }
+
+  generate_btn {
+      display: block;
+      margin: 20px auto; /* Centers the button horizontally */
+      padding: 10px 20px; /* Adds padding inside the button */
+      border-radius: 5px; /* Rounds the corners */
+      cursor: pointer; /* Changes the cursor on hover */
+      background-color: #007bff; /* Green background */
+      color: white; /* White text */
+      border: none; /* Removes the default border */
+      text-align: center;
+      display: none;
+  }
+  generate_btn:hover {
+      background-color: #0056b3; /* Darker green on hover */
+  }
