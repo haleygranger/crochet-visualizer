@@ -8,14 +8,37 @@
 
 <body>
     <h1>Crochet Pattern Converter</h1>
-    <script src="my_script.js"></script>
+    <script src="script.js"></script>
     <h2>Welcome to the Crochet Pattern Converter!</h2>
     <p>This tool helps you convert crochet patterns between different terminologies and formats.</p>
 
     <h1>Configurations</h1>
-    <label> Number of rows: </label>
-    <input type="text" id="fileInput" />
-    <button id="enterBtn">Enter</button>
+    <config_box>
+        <entry_box>
+            <label> Number of Rows: </label>
+            <input type="text" id="num_rows" />
+            <transparent-box></transparent-box>
+        </entry_box>
+
+        <entry_box>
+            <label>Number of Colors</label>
+            <input type="text" id="num_colors" />
+            <transparent-box></transparent-box>
+        </entry_box>
+
+        <entry_box>
+            <label>Slip Stitch at end?</label>
+            <input type="checkbox" id="slip_stitch_cb" />
+            <transparent-box></transparent-box>
+        </entry_box>
+    </config_box>
+    <button id="enterBtn" onclick="generateRows()">Enter</button>
+    <button id="resetBtn" onclick="resetRows()">Reset</button>
+
+    <div id="rows_container"></div>
+
+    <generate_btn id="generate_btn" onclick="generatePattern()">Generate</generate_btn>
+
 </body>
 
 </html>
